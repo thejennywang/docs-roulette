@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root 'backerkats#index'
 
   resources :backerkats
+  resources :email_blasts
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
