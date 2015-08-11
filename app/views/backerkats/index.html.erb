@@ -1,1 +1,5 @@
-<%= @backerkats %>
+<% @backerkats.each do |kat| %>
+  <p><%= kat.name %> | <%= kat.email %></p> <%= link_to "destroy", kat, method: :delete %>
+<% end %>
+
+<%= link_to "New", new_backerkat_path %>
