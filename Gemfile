@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
+
+ruby '2.0.0'
+
 gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -35,6 +38,7 @@ gem 'mail'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'rails_12factor'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
