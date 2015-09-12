@@ -1,4 +1,4 @@
-class HelpscoutArticleFetcher
+  class HelpscoutArticleFetcher
 
   BASE_URI = 'https://docsapi.helpscout.net/v1/'
   HELPSCOUT_API_KEY = Rails.application.secrets.helpscout_api_key
