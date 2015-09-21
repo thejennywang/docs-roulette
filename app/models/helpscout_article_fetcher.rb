@@ -18,7 +18,7 @@
       puts current_page
       body = get("collections/#{collection_id}/articles?page=#{current_page}&pageSize=100")['articles']
       total_pages = body['pages']
-      current_page = current_page +  1 
+      current_page = current_page + 1 
       articles = articles + body['items']
     end
 

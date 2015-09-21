@@ -8,7 +8,7 @@
   <% @articles.each do |article| %>
     <tr>
       <td> <%= link_to article.name, article.url %> </td>   
-      <td> <%= article.updated_at.to_s(:long_ordinal) %> </td>   
+      <td> <%= article.updated_at.in_time_zone("Pacific Time (US & Canada)").to_s(:long_ordinal) %> </td>   
     </tr>
   <% end %>
 </table>
