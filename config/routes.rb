@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root 'backerkats#index'
 
   resources :backerkats
+  
   resources :articles do
     collection do
       get :fetch

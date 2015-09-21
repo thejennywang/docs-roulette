@@ -5,6 +5,6 @@ class ArticlesController < ApplicationController
 
   def fetch
     Article.fetch 
-    redirect_to :root
+    redirect_to articles_path
   end
 end

@@ -1,5 +1,4 @@
 <p> <%= link_to "Add a new Backerkat", new_backerkat_path %> </p>
-<p> <%= link_to "Send Emails", email_blasts_path, method: :post %> </p>
 
 <% @backerkats.each do |kat| %>
   <p><%= kat.name %> | <%= kat.email %></p> <%= link_to "Remove", kat, method: :delete %>
