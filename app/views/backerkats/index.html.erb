@@ -1,5 +1,16 @@
 <p> <%= link_to "Add a new Backerkat", new_backerkat_path %> </p>
 
-<% @backerkats.each do |kat| %>
-  <p><%= kat.name %> | <%= kat.email %></p> <%= link_to "Remove", kat, method: :delete %>
-<% end %>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Remove</th>
+  </tr>
+  <% @backerkats.each do |kat| %>
+    <tr>
+      <td> <%= kat.name %> </td>   
+      <td> <%= kat.email %> </td>   
+      <td><%= link_to "Remove", kat, method: :delete %></td>
+    </tr>
+  <% end %>
+</table>

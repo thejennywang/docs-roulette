@@ -7,12 +7,12 @@ class BackerkatsController < ApplicationController
     name = params[:backerkat][:name]
     email = params[:backerkat][:email]
     Backerkat.create(name: name, email: email)
-    redirect_to root_url
+    redirect_to backerkats_path
   end
 
   def destroy
     id = params[:id]
     Backerkat.find(id).destroy
-    redirect_to root_url
+    redirect_to backerkats_path
   end
 end
