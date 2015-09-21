@@ -6,6 +6,11 @@ Rails.application.routes.draw do
   root 'backerkats#index'
 
   resources :backerkats
+  resources :articles do
+    collection do
+      get :fetch
+    end
+  end
   resources :email_blasts
 
   # Example of regular route:

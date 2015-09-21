@@ -1,0 +1,20 @@
+<div> <%= link_to "Refresh articles", fetch_articles_path %> </div>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>URL</th>
+    <th>Updated At</th>
+  </tr>
+  <% @articles.each do |article| %>
+    <tr>
+      <td> <%= article.name %> </td>   
+      <td> <%= article.url %> </td>   
+      <td> <%= article.updated_at %> </td>   
+    </tr>
+  <% end %>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+</table>
