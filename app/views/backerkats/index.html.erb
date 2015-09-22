@@ -10,7 +10,7 @@
     <tr>
       <td> <%= kat.name %> </td>   
       <td> <%= kat.email %> </td>   
-      <td><%= link_to "Remove", kat, method: :delete %></td>
+      <td><%= link_to "Remove", backerkat_path(kat), method: :delete %></td>
     </tr>
   <% end %>
 </table>
