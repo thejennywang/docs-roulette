@@ -7,6 +7,6 @@ class EmailBlastsController < ApplicationController
       BackerkatMailer.new_article(b, all_articles.sample).deliver_now
     end
 
-    redirect_to root_url, notice: "Blast Sent!"
+    redirect_to root_url, alert: "Blast Sent!"
   end
 end
