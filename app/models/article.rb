@@ -5,6 +5,4 @@ class Article < ActiveRecord::Base
       Article.where(url: a['publicUrl'], helpscout_collection_id: a['collectionId'], helpscout_article_id: a['id']).first_or_create(name: a['name'])
     end
   end
-
-  # https://secure.helpscout.net/docs/#{collection_id}/article/#{id}/
 end
